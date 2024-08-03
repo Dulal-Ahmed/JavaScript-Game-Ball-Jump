@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ball Jump</title>
+</head>
+<body>
+    <div id="board">
+        <h1>Score: <span id="score">0</span></h1>
+        <div class="container">
+            <h2>Game Over!! <br>
+             Your Score : <span id="yourScore">0</span>
+             <br> Press "Space" or Click Start Button to ReStart Game.
+            </h2>
+            <Button onclick="gameReStart()">Start</Button>
+        </div>
+        <img id="ball" class="ballAnimation" src="./ball.png" alt="Ball">
+        <img id="stone" src="./stone1.png" alt="stone">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#board{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(54, 159, 245), blue);
+    border-bottom: 15px solid green;
+    overflow: hidden;
+    color: white;
+}
+h1{padding: 20px;}
+.container{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display: none;
+}
+.container button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #055c08;
+    color: white;
+    cursor: pointer;
+}
+#ball{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    left: 50px;
+}
+#stone{
+    position: absolute;
+    bottom: 0px;
+    left: -80px;
+    width: 80px;
+    height: 80px;
+}
+.ballAnimation{
+    animation: ballAnimation 1s linear infinite;
+}
+
+@keyframes ballAnimation{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+@media (max-width: 768px ){
+    .container{
+        left: 10%;
+    }
+}
